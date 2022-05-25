@@ -1,11 +1,12 @@
 from django import forms
+import models
 
 class LaborForm(forms.ModelForm):
     class Meta:
-        model = ModeloLaborVivero
+        model = models
         fields = [
-            'codigoLabor',
-            'nombreLabor',
+            'nombreProducto',
+            'FrecuenAplicacion',
             'fechaLabor',
-            'descripcionLabor',
+            'ValorProcducto ',
         ]
