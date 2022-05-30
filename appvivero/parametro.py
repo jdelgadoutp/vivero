@@ -20,7 +20,8 @@ class LaborForm(forms.ModelForm):
             'nombreProducto': forms.TextInput(attrs={'class':'form-control'}),
             'FrecuenciaAplicacion': forms.TextInput(attrs={'class': 'form-control'}),
             'ValorProducto': forms.TextInput(attrs={'class': 'form-control'}),
-            }     
+            }
+
     class productor:
         model = models
         fields = [
@@ -28,4 +29,14 @@ class LaborForm(forms.ModelForm):
             'nombre',
             'apellido',
         ]
-    
+        labels = {
+            'identificacion': 'identificacion',
+            'nombre': 'nombre',
+            'apellido': 'apellido',
+        }
+        widgets = {
+            'identificacion': forms.TextInput(attrs={'class':'form-control'}),
+            'nombre': forms.TextInput(attrs={'class': 'form-control'}),
+            'apellido': forms.TextInput(attrs={'class': 'form-control'}),
+            }
+              
