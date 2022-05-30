@@ -20,7 +20,7 @@ class LaborForm(forms.ModelForm):
             'nombreProducto': forms.TextInput(attrs={'class':'form-control'}),
             'FrecuenciaAplicacion': forms.TextInput(attrs={'class': 'form-control'}),
             'ValorProducto': forms.TextInput(attrs={'class': 'form-control'}),
-            }
+            };
 
     class productor:
         model = models
