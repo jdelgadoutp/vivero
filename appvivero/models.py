@@ -11,3 +11,5 @@ class Procutor(models.Model):
     nombre= models.CharField(max_length=100)
     apellido = models.CharField(max_length=50)
     
+def __str__(self):  # __unicode__ on Python 2
+        return '{} {}'.format(self.codigoVivero, self.nombreVivero)
