@@ -1,11 +1,21 @@
+from pyexpat import model
+from attr import fields
 from django import forms
+import models
 
 class LaborForm(forms.ModelForm):
-    class Meta:
-        model = ModeloLaborVivero
+    class Producto:
+        model = models
         fields = [
-            'codigoLabor',
-            'nombreLabor',
-            'fechaLabor',
-            'descripcionLabor',
+            'nombreProducto',
+            'FrecuenAplicacion',
+            'ValorProcducto ',
         ]
+    class productor:
+        model = models
+        fields = [
+            'identificacion',
+            'nombre',
+            'apellido',
+        ]
+    
