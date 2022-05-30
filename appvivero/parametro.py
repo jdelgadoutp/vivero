@@ -21,6 +21,7 @@ class LaborForm(forms.ModelForm):
             'FrecuenciaAplicacion': forms.TextInput(attrs={'class': 'form-control'}),
             'ValorProducto': forms.TextInput(attrs={'class': 'form-control'}),
             }
+            
     class productor:
         model = models
         fields = [
