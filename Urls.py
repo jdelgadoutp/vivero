@@ -1,5 +1,5 @@
 from django.urls import path
 
 urlpatterns = [
-    path('Registro', Bienvenido, name="Bienvenido"),
+    path('Registro/', Registro, name="Registro"),
 ]
